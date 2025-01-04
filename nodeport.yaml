@@ -1,4 +1,4 @@
-kind: Service
+   kind: Service
 apiVersion: v1
 metadata:
   name: nginx-np
@@ -13,3 +13,5 @@ spec:
    protocol: TCP
    port: 80 # serviceport
    targetPort: 80 #containerport
+
+   
