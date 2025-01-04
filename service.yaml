@@ -8,8 +8,8 @@ metadata:
     environment: dev
 sepc:
   containers:
-     - name: nginx
-       image: nginx
+  - name: nginx
+    image: nginx
 
 kind: Service
 apiVersion: v1
