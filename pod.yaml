@@ -1,8 +1,8 @@
-appVesion: v1
+appVersion: v1
 kind: pod
 metadata:
    name: nginx
-   lable: 
+   lables: 
 spec:
    containers:
       -name: nginx
