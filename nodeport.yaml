@@ -1,17 +1,14 @@
-   kind: Service
+kind: Service
 apiVersion: v1
 metadata:
-  name: nginx-np
+  name: nginx-service
 spec:
-  type: NodePort
-  selector: 
-   project: expense
-   module: backend
-   environment: dev
-  ports: 
-  -name: nginx-svc-port
-   protocol: TCP
-   port: 80 # serviceport
-   targetPort: 80 #containerport
-
-   
+  selector:
+    project: expense
+    module: backend
+    environment: dev
+  ports:
+  - name: nginx-svc-port
+    protocol: TCP
+    port: 80
+    targetPort: 80 
