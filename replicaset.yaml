@@ -26,8 +26,8 @@ spec:
         image: nginx:stable-perl
 
 --
-apiVersion: v1
 kind: Service
+apiVersion: v1
 metadata: 
   name: nginx
 spec:
@@ -35,8 +35,7 @@ spec:
     tier: frontend
     app: nginx
   ports:
-    - name: nginx-svc-port
-      protocol: TCP
-      port: 80
-      targetPort: 80
-      
+  - name: nginx-svc-port
+    protocol: TCP
+    port: 80
+    targetPort: 80
